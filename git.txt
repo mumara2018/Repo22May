@@ -1,0 +1,87 @@
+Steps
+
+1. Git Register 
+2. Create new file (new file.txt)
+3. Create directory in d:\gittraining\Myrepo\
+
+
+
+Command - How to generate SSH Key
+ssh-keygen -t rsa -b 4096 -C "muthuhex@gmail.com"
+
+Clip Command
+
+clip < ~/.ssh/id_rsa.pub
+
+
+Copy the ssh (clipbard) to SSH and Add SSH key
+
+To Clone, go to d:\gittraining\
+git clone git@github.com:mumara2018/MyRepo.git
+
+---------------
+
+Modify a file in the local folder (existing file - new file.txt)
+
+add a new file (using vi editor - second file, :wq to save and exit)
+
+------------------------------------
+
+#command to git add (to the server)
+git add FileName
+
+## Add all the files... 
+git add -A
+
+
+config user/email
+git config --global user.email "muthuhex@gmail.com"
+git config --global user.name "mumara2018"
+
+
+## command to commit 
+git commit -m "First commit made by Muthu"
+
+
+## git push Origin HEAD / MASTER. The files are pushed to the GIT server
+
+git push origin HEAD
+
+
+---------------------------------
+
+## creating branch. 
+
+git branch MyBranch
+
+## go to the branch
+
+git checkout MyBranch
+
+## git branch - command to check in which branch you are.... 
+
+## create and go to the branch 
+git checkout -b MyBranch
+
+
+## create a file, branch and move the file to the branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
