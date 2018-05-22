@@ -64,6 +64,12 @@ git checkout MyBranch
 git checkout -b MyBranch
 
 
+## to comment a single file 
+git commit -m "comment"
+
+## to comment a all files
+git commit -a -m "comment"
+
 ## create a file, branch and move the file to the branch
 
 
