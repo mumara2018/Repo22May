@@ -1,0 +1,1044 @@
+$ d:
+bash: d:: command not found
+
+Hvuser@EBHVR04-03 MINGW64 ~ (master)
+$ cd d:
+
+Hvuser@EBHVR04-03 MINGW64 /d (master)
+$ pwd
+/d
+
+Hvuser@EBHVR04-03 MINGW64 /d (master)
+$ cd GitTraining/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ dir
+git.txt  MyRepo  NewGIT  Repo22May
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ cls
+bash: cls: command not found
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ clear
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ git clone git@github.com:mumara2018/Repo22May.git
+Cloning into 'Repo22May'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+Receiving objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   ../test/myawesomeproject
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   ../LoginClass.txt
+        modified:   ../SecondFile.txt
+        modified:   ../test/myawesomeproject (new commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../$RECYCLE.BIN/
+        ../27409/
+        ../Abi/
+        ../Assignment/
+        ../GitClone/
+        ./
+        ../HVIMAGE seleni.GHO
+        ../HVIMAGE500.GHO
+        ../Hexaware STM - Installation Guide.pdf
+        ../MAVEN/
+        ../New_WorkSpace/
+        ../Project.zip
+        ../Project/
+        ../Tableau/
+        ../TestData/
+        ../Training-git/
+        ../dbc9dbc6bd7e6d08d4e83dd8/
+        ../materials/
+        ../product-crud-demo-app/
+        ../sathya/
+        ../softwr/
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ cd Repo22May/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ ls
+F1.txt  F2.txt  README.md
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ dir
+F1.txt  F2.txt  README.md
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ vi F3.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F2.txt
+        F3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git add -A
+warning: LF will be replaced by CRLF in F3.txt.
+The file will have its original line endings in your working directory.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   F1.txt
+        new file:   F2.txt
+        new file:   F3.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git commit -m "Fix for SARA 201"
+[master 2545008] Fix for SARA 201
+ 3 files changed, 11 insertions(+)
+ create mode 100644 F2.txt
+ create mode 100644 F3.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git push origin HEAD
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 474 bytes | 474.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:mumara2018/Repo22May.git
+   e1954ea..2545008  HEAD -> master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ ls
+F1.txt  F2.txt  F3.txt  README.md
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git pull origin HEAD
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:mumara2018/Repo22May
+ * branch            HEAD       -> FETCH_HEAD
+Updating 2545008..e93dc48
+Fast-forward
+ git.txt | 87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 87 insertions(+)
+ create mode 100644 git.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch
+* master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout NewBranch1
+error: pathspec 'NewBranch1' did not match any file(s) known to git.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch
+* master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch NewBranch1
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch
+  NewBranch1
+* master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout NewBranch1
+Switched to branch 'NewBranch1'
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  README.md
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git branch
+* NewBranch1
+  master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:mumara2018/Repo22May.git
+ * [new branch]      HEAD -> NewBranch1
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ cd ..
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ ls
+git.txt  MyRepo/  NewGIT/  Repo22May/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ git clone git@github.com:tsanviji/repo2.git
+Cloning into 'repo2'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 23 (delta 4), reused 18 (delta 3), pack-reused 0
+Receiving objects: 100% (23/23), 7.60 KiB | 1.52 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ ls
+git.txt  MyRepo/  NewGIT/  repo2/  Repo22May/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ cd repo2
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (master)
+$ ls
+README.md  test1  test2  test3  test4.txt  test5.txt  vijigit.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (master)
+$ git checkout -b MuthuBranch
+Switched to a new branch 'MuthuBranch'
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ ls
+README.md  test1  test2  test3  test4.txt  test5.txt  vijigit.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ vi F5.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git status
+On branch MuthuBranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        F5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git add -A
+warning: LF will be replaced by CRLF in F5.txt.
+The file will have its original line endings in your working directory.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git status
+On branch MuthuBranch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   F5.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git commit -a -m "Changed in Viji Repo"
+[MuthuBranch bc0afd9] Changed in Viji Repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 F5.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git status
+On branch MuthuBranch
+nothing to commit, working tree clean
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ git push origin HEAD
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:tsanviji/repo2.git
+ * [new branch]      HEAD -> MuthuBranch
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/repo2 (MuthuBranch)
+$ cd ..
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ cd Repo2
+repo2/     Repo22May/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining (master)
+$ cd Repo22May/
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+        modified:   git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   F1.txt
+        modified:   git.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -a -m "Modified after collobration by Chinna Papa"
+[NewBranch1 360b33a] Modified after collobration by Chinna Papa
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+nothing to commit, working tree clean
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 586 bytes | 586.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:mumara2018/Repo22May.git
+   e93dc48..360b33a  HEAD -> NewBranch1
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -a -m "second "
+[NewBranch1 6b6be7a] second
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (fetch first)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -a -m "second "
+[NewBranch1 9c59fd2] second
+ 1 file changed, 1 insertion(+)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (fetch first)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git pull origin HEAD
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:mumara2018/Repo22May
+ * branch            HEAD       -> FETCH_HEAD
+Auto-merging F1.txt
+CONFLICT (content): Merge conflict in F1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git commit -m "Test"
+[NewBranch1 784f51a] Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (fetch first)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ get pull origin HEAD
+bash: get: command not found
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git pull origin HEAD
+remote: Counting objects: 11, done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 11 (delta 3), reused 6 (delta 2), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+From github.com:mumara2018/Repo22May
+ * branch            HEAD       -> FETCH_HEAD
+Auto-merging F1.txt
+CONFLICT (content): Merge conflict in F1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git status
+On branch NewBranch1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   viji1.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   F1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   viji1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git stash
+F1.txt: needs merge
+F1.txt: needs merge
+F1.txt: unmerged (878fdcea401d271745d3bc5c08825df466e72bbf)
+F1.txt: unmerged (e69de29bb2d1d6434b8b29ae775ad8c2e48c5391)
+F1.txt: unmerged (ef963084e1594a2cc0ffcba5c2d915260e247e20)
+fatal: git-write-tree: error building trees
+Cannot save the current index state
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git status
+On branch NewBranch1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   viji1.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   F1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   viji1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git add viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git status
+On branch NewBranch1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   viji1.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   F1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git checkout master
+error: you need to resolve your current index first
+F1.txt: needs merge
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git add F1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkou                                                                                                                t:
+        F1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git stash
+Saved working directory and index state WIP on NewBranch1: 784f51a Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash list
+stash@{0}: WIP on NewBranch1: 784f51a Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash apply stash@{0}
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   viji1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add F1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -a -m "ttt"
+[NewBranch1 ba4b85d] ttt
+ 2 files changed, 14 insertions(+)
+ create mode 100644 viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (non-fast-forward)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  README.md
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout viji
+error: pathspec 'viji' did not match any file(s) known to git.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch
+  NewBranch1
+* master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout viji
+error: pathspec 'viji' did not match any file(s) known to git.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ get pull origin HEAD
+bash: get: command not found
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git pull origin HEAD
+From github.com:mumara2018/Repo22May
+ * branch            HEAD       -> FETCH_HEAD
+Updating e93dc48..1ede553
+Fast-forward
+ F1.txt    | 8 +++++---
+ git.txt   | 6 ++++++
+ viji1.txt | 1 +
+ 3 files changed, 12 insertions(+), 3 deletions(-)
+ create mode 100644 viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git branch
+  NewBranch1
+* master
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout NewBranch1
+Switched to branch 'NewBranch1'
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  README.md  viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ vi viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+nothing to commit, working tree clean
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  README.md  viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ vi viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout NewBranch1
+Switched to branch 'NewBranch1'
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ vi viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ vi viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git commit -m "t1"
+[master cfba650] t1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git log
+commit cfba65088a18d8939f4968f77d738792440d42f2 (HEAD -> master)
+Author: mumara2018 <muthuhex@gmail.com>
+Date:   Tue May 22 11:47:48 2018 +0530
+
+    t1
+
+commit 1ede553ffc8def25abf91e397c15e6b68b66cce0
+Merge: 5891986 c3cc956
+Author: mumara2018 <39476587+mumara2018@users.noreply.github.com>
+Date:   Tue May 22 11:22:04 2018 +0530
+
+    Merge pull request #2 from mumara2018/NewBranch1
+
+    New branch1
+
+commit c3cc9561d8e36359fc1018df74214dbda0ff1aae
+Merge: 868d105 5891986
+Author: mumara2018 <39476587+mumara2018@users.noreply.github.com>
+Date:   Tue May 22 11:21:54 2018 +0530
+
+    Merge branch 'master' into NewBranch1
+
+commit 58919867a3f9b587e63992a4af4e855e5c877f22
+:...skipping...
+commit cfba65088a18d8939f4968f77d738792440d42f2 (HEAD -> master)
+Author: mumara2018 <muthuhex@gmail.com>
+Date:   Tue May 22 11:47:48 2018 +0530
+
+    t1
+
+commit 1ede553ffc8def25abf91e397c15e6b68b66cce0
+Merge: 5891986 c3cc956
+Author: mumara2018 <39476587+mumara2018@users.noreply.github.com>
+Date:   Tue May 22 11:22:04 2018 +0530
+
+    Merge pull request #2 from mumara2018/NewBranch1
+
+    New branch1
+
+commit c3cc9561d8e36359fc1018df74214dbda0ff1aae
+Merge: 868d105 5891986
+Author: mumara2018 <39476587+mumara2018@users.noreply.github.com>
+Date:   Tue May 22 11:21:54 2018 +0530
+
+    Merge branch 'master' into NewBranch1
+
+commit 58919867a3f9b587e63992a4af4e855e5c877f22
+Merge: 3a40bc3 91fa9c9
+Author: mumara2018 <39476587+mumara2018@users.noreply.github.com>
+Date:   Tue May 22 11:20:29 2018 +0530
+
+    Merge pull request #1 from mumara2018/viji
+
+    viji
+
+commit 91fa9c9cdb833a85add3105b9a4685460344426b
+Author: Your Name <you@example.com>
+Date:   Tue May 22 11:16:46 2018 +0530
+
+    viji
+
+commit 868d1053e06822ede4bc9b35b81a64cafa98245d
+Author: poonkodisubramanian <poonkodi_s@yahoo.com>
+Date:   Tue May 22 11:02:00 2018 +0530
+
+    F1 changed
+
+commit 3a40bc3ee76ba4e2900175bafa9067d208b11330
+Author: poonkodisubramanian <poonkodi_s@yahoo.com>
+Date:   Tue May 22 10:59:33 2018 +0530
+
+    first
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git push origin MASTER
+fatal: MASTER cannot be resolved to branch.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (master)
+$ git checkout NewBranch1
+Switched to branch 'NewBranch1'
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  README.md  viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ vi poonkodi.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ ls
+F1.txt  F2.txt  F3.txt  git.txt  poonkodi.txt  README.md  viji1.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        poonkodi.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add -A
+warning: LF will be replaced by CRLF in poonkodi.txt.
+The file will have its original line endings in your working directory.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -m "ok"
+[NewBranch1 11a0f94] ok
+ 1 file changed, 4 insertions(+)
+ create mode 100644 poonkodi.txt
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (non-fast-forward)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git pull origin HEAD
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From github.com:mumara2018/Repo22May
+ * branch            HEAD       -> FETCH_HEAD
+Auto-merging viji1.txt
+CONFLICT (add/add): Merge conflict in viji1.txt
+Auto-merging F1.txt
+CONFLICT (content): Merge conflict in F1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (non-fast-forward)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git status
+On branch NewBranch1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   .F4.txt.swp
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   F1.txt
+        both added:      viji1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git stash
+F1.txt: needs merge
+viji1.txt: needs merge
+F1.txt: needs merge
+viji1.txt: needs merge
+F1.txt: unmerged (878fdcea401d271745d3bc5c08825df466e72bbf)
+F1.txt: unmerged (41ed55e613e731e41f56693f8df817cf2801aaa1)
+F1.txt: unmerged (ef963084e1594a2cc0ffcba5c2d915260e247e20)
+viji1.txt: unmerged (876f6b522ab05db7ee5eb2d4ec2ad0ca80694e6d)
+viji1.txt: unmerged (6cb1f7be52b375030dc7320ef25b71f803de3568)
+fatal: git-write-tree: error building trees
+Cannot save the current index state
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git stash list
+stash@{0}: WIP on NewBranch1: 784f51a Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git add -A
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1|MERGING)
+$ git stash
+Saved working directory and index state WIP on NewBranch1: 11a0f94 ok
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash list
+stash@{0}: WIP on NewBranch1: 11a0f94 ok
+stash@{1}: WIP on NewBranch1: 784f51a Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash pop
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .F4.txt.swp
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+        modified:   viji1.txt
+
+Dropped refs/stash@{0} (9f8d5f0c22df53dadcde4e22c69c48161c7291db)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash list
+stash@{0}: WIP on NewBranch1: 784f51a Test
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash pop
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .F4.txt.swp
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+        modified:   viji1.txt
+
+Dropped refs/stash@{0} (b5e7fcda13fa3b30d4eccc535eab928f49bff9b5)
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git stash list
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .F4.txt.swp
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   F1.txt
+        modified:   viji1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git add -i
+           staged     unstaged path
+  1:       binary      nothing .F4.txt.swp
+  2:    unchanged        +3/-0 F1.txt
+  3:    unchanged        +6/-0 viji1.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 2
+           staged     unstaged path
+  1:    unchanged        +3/-0 F1.txt
+  2:    unchanged        +6/-0 viji1.txt
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged        +3/-0 F1.txt
+  2:    unchanged        +6/-0 viji1.txt
+Update>> 2
+           staged     unstaged path
+* 1:    unchanged        +3/-0 F1.txt
+* 2:    unchanged        +6/-0 viji1.txt
+Update>>
+updated 2 paths
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 4
+No untracked files.
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git status
+On branch NewBranch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .F4.txt.swp
+        modified:   F1.txt
+        modified:   viji1.txt
+
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git commit -a -m "ok1"
+[NewBranch1 2363156] ok1
+ 3 files changed, 9 insertions(+)
+ create mode 100644 .F4.txt.swp
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$ git push origin HEAD
+To github.com:mumara2018/Repo22May.git
+ ! [rejected]        HEAD -> NewBranch1 (non-fast-forward)
+error: failed to push some refs to 'git@github.com:mumara2018/Repo22May.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Hvuser@EBHVR04-03 MINGW64 /d/GitTraining/Repo22May (NewBranch1)
+$
